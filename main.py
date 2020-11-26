@@ -6,7 +6,7 @@ spacer = "#####################################\n"
 print(spacer + "Willkommen bei Schnick Schnack Schnuck\n" + spacer)
 
 liste = ["Stein" , "Papier", "Schere"]
-pc = random.choice(liste)
+pc = random.randint(0,2)
 
 print(pc)#Gibt die Auswahl des PC's an. (Zum testen)
 
@@ -36,5 +36,5 @@ def abfrage():
 abfrage()
 
 print(user)
-print("Der User hat " + str(liste[user]) + "gewählt")
-print ("Der PC hat ")
+print("Der User hat " + str(liste[user]) + " gewählt")
+print("Der Pc hat " + str(liste[pc]) + " gewählt")
